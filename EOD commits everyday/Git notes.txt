@@ -1,0 +1,3 @@
+till day 5 commited, also create diffrent branches for diffrent profile like work and personal
+everything looks fine, learnt lot of git commands in these process :-
+

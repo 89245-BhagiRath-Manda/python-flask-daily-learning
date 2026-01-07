@@ -46,73 +46,7 @@ customer[3] = {
 
 print(customer)
 
-# proper revison indepth
 
-# =========================
-# DICTIONARY PRACTICE
-# =========================
-
-# Create dictionary
-user = {
-    "id": 1,
-    "name": "Ram",
-    "age": 24,
-    "active": True
-}
-
-print("Initial user:", user)
-
-# Add / Update
-user["age"] = 25
-user["city"] = "Jaipur"
-print("After add/update:", user)
-
-# get() - safe access
-print("Name:", user.get("name"))
-print("Salary (default):", user.get("salary", "Not Available"))
-
-# keys(), values(), items()
-print("Keys:", user.keys())
-print("Values:", user.values())
-print("Items:", user.items())
-
-# pop() - remove by key
-removed_age = user.pop("age")
-print("Removed age:", removed_age)
-print("After pop:", user)
-
-# popitem() - removes last inserted item
-last_item = user.popitem()
-print("Pop last item:", last_item)
-print("After popitem:", user)
-
-# update() - merge dictionaries
-user.update({
-    "age": 26,
-    "email": "ram@test.com"
-})
-print("After update:", user)
-
-# setdefault() - add key if not exists
-user.setdefault("role", "USER")
-user.setdefault("name", "Unknown")  # won't change existing
-print("After setdefault:", user)
-
-# in keyword
-print("Is 'name' present?", "name" in user)
-
-# copy()
-user_copy = user.copy()
-print("Copied user:", user_copy)
-
-# clear()
-user_copy.clear()
-print("After clear copy:", user_copy)
-
-# Looping
-print("\nLooping dictionary:")
-for key, value in user.items():
-    print(key, "=>", value)
 
 
 
